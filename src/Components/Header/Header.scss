@@ -1,0 +1,12 @@
+.navbar {
+  padding: 1.5rem 15rem !important;
+  z-index: 2000;
+  transition: background-color .85s, transform .85s;
+
+
+  .navbar-nav {
+    a {
+      font-size:25px !important;
+    }
+  }
+}

@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from 'react';
 import './App.scss';
+import Header from './Components/Header/Header.jsx';
+import Homepage from './Pages/HomePage/HomePage.jsx';
+import About from './Pages/About/About.jsx';
+
 
 function App() {
   return (
-    <div className="App c-app">
-      <header>
-        <h1>Header</h1>
-      </header>
+    <div className="c-app">
+        <Header />
+        <Homepage />
+        <About />
     </div>
   );
 }
