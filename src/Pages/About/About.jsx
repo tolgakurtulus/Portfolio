@@ -36,12 +36,14 @@ const About = () => {
               awards thanks to these projects. Currently, my career life
               continues rapidly.
             </p>
-            <Button color={"light"} title={"My Resume"}/>
+            <div className="c-about__button">
+              <Button color={"black"} title={"My Resume"}/>
+            </div>
           </div>
           <div className="c-about__right">
             <div className="c-about__right-box">
               <p>HTML & CSS & Jquery & Bootstrap</p>
-              <ProgressBar variant="info" now={99} label={`99%`} animated visuallyHidden />
+              <ProgressBar variant="info" now={99} label={`99%`} animated />
             </div>
             <div className="c-about__right-box">
               <p>Javascript</p>

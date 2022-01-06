@@ -4,7 +4,7 @@
     height: 100%;
 
     &__container {
-        padding: 175px 200px;
+        padding: 125px 200px;
     }
 
     &__row {
@@ -28,7 +28,6 @@
         }
 
         p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             opacity: 0.9;
         }
 
@@ -49,11 +48,14 @@
         margin-bottom: 25px;
 
         p {
-            font-family: monospace;
             font-size: 19px;
             margin: 5px !important;
             color: white;
             opacity: 0.9;
         }
+    }
+
+    &__button {
+        margin-top: 40px;
     }
 }

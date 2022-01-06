@@ -1,0 +1,119 @@
+@keyframes flasher {
+    from {
+      opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+    
+.c-portfolio {
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+    p, h1{
+        color: white;
+    }
+
+    &__container {
+        padding: 200px 200px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h2 {
+            color: white;
+            width: 50%;
+            text-align: center;
+            border-bottom: 1px solid white;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+
+            span {
+                background: #000;
+                padding: 0 35px;
+            }
+        }
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px
+    }
+
+    &__tab-item {
+        margin: 0 20px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        // flex: 0 0 23%;
+        // max-width: 23%;
+        margin: 1%;
+        cursor: pointer;
+        animation: flasher 0.5s;
+    }
+
+    &__item-img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 300px;
+            height: 300px;
+            height: auto;
+            vertical-align: middle;
+            border-style: none;
+            z-index: 2;
+        }
+
+        &:hover {
+            .c-portfolio__item-overlay {
+                opacity: .85;
+            }
+        }
+    }
+
+    &__item-overlay {
+        background: #0C0C0C;
+        color: #eee;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        color: #35424C;
+        opacity: 0;
+        transition: all .5s;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid white;
+    }
+
+    &__item-overlay-info {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h6 {
+            transform: translateY(10px);
+            transition: all .5s;
+            font-size: 30px;
+            font-weight: 900;
+            color: white;
+        }
+    }
+}

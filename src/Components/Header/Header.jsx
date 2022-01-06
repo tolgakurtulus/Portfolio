@@ -3,7 +3,7 @@ import "./Header.scss";
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Header = () => {
+const Header = (props) => {
 
     const [scrollY, setScrollY] = useState(0);
 
@@ -21,6 +21,18 @@ const Header = () => {
       };
     }, []);
 
+    function homeClick() {
+      props.handleMenuClick("home");
+    }
+    function aboutClick() {
+      props.handleMenuClick("about");
+    }
+    function portfolioClick() {
+      props.handleMenuClick("portfolio");
+    }
+    function contactClick() {
+      props.handleMenuClick("contact");
+    }
 
     return (
         <Navbar fixed="top" collapseOnSelect expand="lg" bg={scrollY > 0 ? "dark" : ""} variant="dark">
@@ -29,10 +41,10 @@ const Header = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>
                 <Nav>
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link onClick={homeClick} href="#home">Home</Nav.Link>
+                <Nav.Link onClick={aboutClick} href="#about">About</Nav.Link>
+                <Nav.Link onClick={portfolioClick} href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link onClick={contactClick} href="#contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
