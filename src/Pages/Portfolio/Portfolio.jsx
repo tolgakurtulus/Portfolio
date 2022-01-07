@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
 import Button from "../../Components/Button/Button.jsx";
 import DataInfo from "../../assets/data/data.js";
-import { Route } from "react-router-dom";
-import PortfolioDetail from "../PortfolioDetail/PortfolioDetail.jsx";
 
 const Portfolio = () => {
   let category;
@@ -78,18 +76,16 @@ const Portfolio = () => {
         <div className="c-portfolio__row">
           {categoryData.map((item) => {
             return (
-              // <Route exact path={`${item.title}`} component={PortfolioDetail}>
-                <div className="c-portfolio__item">
-                  <div className="c-portfolio__item-img">
-                    <img src={`../../img/${item.img}`} alt={item.title} />
-                    <div className="c-portfolio__item-overlay">
-                      <div className="c-portfolio__item-overlay-info">
-                        <h6>{item.title}</h6>
-                      </div>
+              <div className="c-portfolio__item" onClick={()=> window.open(`/${item.title}`, "_blank")}>
+                <div className="c-portfolio__item-img">
+                  <img src={`../../img/${item.img}`} alt={item.title} />
+                  <div className="c-portfolio__item-overlay">
+                    <div className="c-portfolio__item-overlay-info">
+                      <h6>{item.title}</h6>
                     </div>
                   </div>
                 </div>
-              // </Route>
+              </div>
             );
           })}
         </div>

@@ -1,12 +1,26 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./PortfolioDetail.scss";
 
-const PortfolioDetail = () => {
+const PortfolioDetail = (item) => {
+console.log("~ item", item)
 
-  
   return (
     <div className="c-portfolio-detail">
-      <h1>TOLGAAAAAAAAAAAAA</h1>
+      <div className="c-portfolio-detail__title">
+        <h1>TOLGAAAAAAAAAAAAasdasdasdasdA</h1>
+      </div>
+      <div className="c-portfolio-detail__img">
+        <img src="" alt="" />
+      </div>
+      <div className="c-portfolio-detail__description">
+        <p>Description</p>
+      </div>
+      <div className="c-portfolio-detail__which">
+        <p><b> In Which Company It Was Made :</b> PixelPlus</p>
+      </div>
+      <div className="c-portfolio-detail__language">
+        <p><b>Languages Used :</b></p>
+      </div>
     </div>
   );
 };
