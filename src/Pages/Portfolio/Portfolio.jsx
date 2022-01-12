@@ -78,7 +78,7 @@ const Portfolio = () => {
             return (
               <div className="c-portfolio__item" onClick={()=> window.open(`/${item.title}`, "_blank")}>
                 <div className="c-portfolio__item-img">
-                  <img src={`../../img/${item.img}`} alt={item.title} />
+                  <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
                   <div className="c-portfolio__item-overlay">
                     <div className="c-portfolio__item-overlay-info">
                       <h6>{item.title}</h6>
