@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Portfolio.scss";
 import Button from "../../Components/Button/Button.jsx";
 import DataInfo from "../../assets/data/data.js";
+import { Link } from "react-router-dom";
+
 
 const Portfolio = () => {
   let category;
@@ -32,7 +34,6 @@ const Portfolio = () => {
         </div>
         <div className="c-portfolio__tab">
           <div className="c-portfolio__tab-item">
-            {/* <button onClick={handleClick}>Tolga</button> */}
             <Button
               size={"xl"}
               radius={"radius"}
@@ -76,16 +77,18 @@ const Portfolio = () => {
         <div className="c-portfolio__row">
           {categoryData.map((item) => {
             return (
-              <div key={item.id} className="c-portfolio__item" onClick={()=> window.open(`/Portfolio/${item.title}`, "_blank")}>
-                <div className="c-portfolio__item-img">
-                  <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
-                  <div className="c-portfolio__item-overlay">
-                    <div className="c-portfolio__item-overlay-info">
-                      <h6>{item.title}</h6>
+              <Link to={`/Portfolio/${item.title}`}>
+                <div key={item.id} className="c-portfolio__item">
+                  <div className="c-portfolio__item-img">
+                    <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
+                    <div className="c-portfolio__item-overlay">
+                      <div className="c-portfolio__item-overlay-info">
+                        <h6>{item.title}</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
