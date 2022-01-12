@@ -76,7 +76,7 @@ const Portfolio = () => {
         <div className="c-portfolio__row">
           {categoryData.map((item) => {
             return (
-              <div className="c-portfolio__item" onClick={()=> window.open(`/${item.title}`, "_blank")}>
+              <div key={item.id} className="c-portfolio__item" onClick={()=> window.open(`/Portfolio/${item.title}`, "_blank")}>
                 <div className="c-portfolio__item-img">
                   <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
                   <div className="c-portfolio__item-overlay">

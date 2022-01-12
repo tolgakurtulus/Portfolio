@@ -13,6 +13,7 @@ function App() {
         {DataInfo.map((item) => {
           return (
             <Route
+              key={item}
               exact
               path={`/Portfolio/${item.title}`}
               element={<PortfolioDetail item={item} />}
