@@ -1,0 +1,61 @@
+.c-contact {
+    background-color: #212121;
+    width: 100%;
+    height: 100%;
+
+    &__container {
+        padding: 125px 200px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        flex: 0 0 49%;
+        max-width: 49%;
+
+        h2,
+        h3,
+        p {
+            color: white;
+        }
+
+        h3 {
+            opacity: 0.5;
+        }
+
+        p {
+            opacity: 0.9;
+        }
+
+        b {
+            font-size: 18px;
+        }
+    }
+
+    &__right {
+        flex: 0 0 49%;
+        max-width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__right-box {
+        width: 100%;
+        margin-bottom: 25px;
+
+        p {
+            font-size: 19px;
+            margin: 5px !important;
+            color: white;
+            opacity: 0.9;
+        }
+    }
+
+    &__button {
+        margin-top: 40px;
+    }
+}

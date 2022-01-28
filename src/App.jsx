@@ -15,7 +15,7 @@ function App() {
             <Route
               key={item}
               exact
-              path={`/Portfolio/${item.title}`}
+              path={`/Portfolio/${item.titlelink}`}
               element={<PortfolioDetail item={item} />}
             />
           );
