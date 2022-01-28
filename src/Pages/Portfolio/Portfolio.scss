@@ -1,119 +1,133 @@
 @keyframes flasher {
-    from {
-      opacity: 0.1;
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.c-portfolio {
+  background: linear-gradient(to right, #312929, #ce3939);
+  height: 200vh;
+  width: 100%;
+  p,
+  h1 {
+    color: white;
+  }
+
+  &__container {
+    padding: 200px 200px;
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__tab-item {
+    margin: 0 20px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #f8f9fa;
+    height: 1300px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: black;
+      background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 1) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 153, 0, 1) 50%,
+        rgba(255, 153, 0, 1) 75%,
+        transparent 75%,
+        transparent
+      );
     }
-    to {
-        opacity: 1;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #f5f5f5;
+    }
+
+    &:-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #f5f5f5;
     }
   }
-    
-.c-portfolio {
-    background-color: black;
-    height: 200vh;
-    width: 100%;
-    p, h1{
-        color: white;
+
+  &__item-container {
+    flex: 0 0 31%;
+    max-width: 31%;
+    margin: 2% 1%;
+    border: 2px solid white;
+    box-shadow: 0px 10px 30px black;
+  }
+
+  &__item {
+    cursor: pointer;
+    animation: flasher 0.5s;
+  }
+
+  &__item-img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 300px;
+      vertical-align: middle;
+      border-style: none;
+      z-index: 2;
+      opacity: 0.9;
     }
 
-    &__container {
-        padding: 200px 200px;
+    &:hover {
+      .c-portfolio__item-overlay {
+        opacity: 0.85;
+      }
     }
+  }
 
-    &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
+  &__item-overlay {
+    background: #0c0c0c;
+    color: #eee;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    color: #35424c;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+  }
 
-        h2 {
-            color: white;
-            width: 50%;
-            text-align: center;
-            border-bottom: 1px solid white;
-            line-height: 0.1em;
-            margin: 10px 0 20px;
+  &__item-overlay-info {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-            span {
-                background: #000;
-                padding: 0 35px;
-            }
-        }
+    h6 {
+      transform: translateY(10px);
+      transition: all 0.5s;
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+      text-transform: capitalize;
     }
-
-    &__tab {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px
-    }
-
-    &__tab-item {
-        margin: 0 20px;
-    }
-
-    &__row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-        // flex: 0 0 23%;
-        // max-width: 23%;
-        margin: 1%;
-        cursor: pointer;
-        animation: flasher 0.5s;
-    }
-
-    &__item-img {
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 300px;
-            height: 300px;
-            height: auto;
-            vertical-align: middle;
-            border-style: none;
-            z-index: 2;
-        }
-
-        &:hover {
-            .c-portfolio__item-overlay {
-                opacity: .85;
-            }
-        }
-    }
-
-    &__item-overlay {
-        background: #0C0C0C;
-        color: #eee;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        color: #35424C;
-        opacity: 0;
-        transition: all .5s;
-        z-index: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 5px solid white;
-    }
-
-    &__item-overlay-info {
-        width: 100% !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h6 {
-            transform: translateY(10px);
-            transition: all .5s;
-            font-size: 30px;
-            font-weight: 900;
-            color: white;
-        }
-    }
+  }
 }

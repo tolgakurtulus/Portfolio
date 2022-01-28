@@ -2,8 +2,6 @@ import React from "react";
 import "./PortfolioDetail.scss";
 
 const PortfolioDetail = (item) => {
-console.log("~ item", item)
-
   return (
     <div className="c-portfolio-detail">
       <div className="c-portfolio-detail__title">

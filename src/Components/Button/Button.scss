@@ -38,14 +38,23 @@
     }
   }
 
+  &.transparent {
+    color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    
+    &:hover {
+      color: #f8f9fa;
+      background-color: #000;
+    }
+  }
+
   &.radius {
     border-radius: 15px;
   }
 
   &.xl {
+    width: 175px;
     font-size: 20px;
-    padding: 10px 16px;
-
+    padding: 10px 0px !important;
   }
-
 }

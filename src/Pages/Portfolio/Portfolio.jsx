@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Portfolio.scss";
 import Button from "../../Components/Button/Button.jsx";
+import Title from "../../Components/Title/Title.jsx";
 import DataInfo from "../../assets/data/data.js";
 import { Link } from "react-router-dom";
 
@@ -27,17 +28,12 @@ const Portfolio = () => {
   return (
     <div className="c-portfolio">
       <div className="c-portfolio__container">
-        <div className="c-portfolio__title">
-          <h2>
-            <span>Our Work</span>
-          </h2>
-        </div>
+        <Title title={"Our Work"}/>
         <div className="c-portfolio__tab">
           <div className="c-portfolio__tab-item">
             <Button
               size={"xl"}
-              radius={"radius"}
-              color={"black"}
+              color={"transparent"}
               title={"All"}
               value={"all"}
               handleClick={handleClick}
@@ -46,8 +42,7 @@ const Portfolio = () => {
           <div className="c-portfolio__tab-item">
             <Button
               size={"xl"}
-              radius={"radius"}
-              color={"black"}
+              color={"transparent"}
               title={"React"}
               value={"react"}
               handleClick={handleClick}
@@ -56,20 +51,9 @@ const Portfolio = () => {
           <div className="c-portfolio__tab-item">
             <Button
               size={"xl"}
-              radius={"radius"}
-              color={"black"}
+              color={"transparent"}
               title={"Js & Jquery"}
               value={"js"}
-              handleClick={handleClick}
-            />
-          </div>
-          <div className="c-portfolio__tab-item">
-            <Button
-              size={"xl"}
-              radius={"radius"}
-              color={"black"}
-              title={"Vue"}
-              value={"vue"}
               handleClick={handleClick}
             />
           </div>
@@ -77,7 +61,7 @@ const Portfolio = () => {
         <div className="c-portfolio__row">
           {categoryData.map((item) => {
             return (
-              <Link to={`/Portfolio/${item.title}`}>
+              <Link className="c-portfolio__item-container" to={`/Portfolio/${item.title}`}>
                 <div key={item.id} className="c-portfolio__item">
                   <div className="c-portfolio__item-img">
                     <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
