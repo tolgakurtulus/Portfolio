@@ -31,9 +31,8 @@ const About = () => {
             <p>
               <b>3. </b>After graduating from university, I started working at
               PixelPlus company. This was my first full time job as a frontend
-              developer. I've worked on nearly 50 different sites here. I have
-              developed more than twenty projects from scratch and received 3
-              awards thanks to these projects. Currently, my career life
+              developer.I have developed more than thirty projects from scratch and received 3
+              awards thanks to these projects. I am currently working at Odeon technology. Currently, my career life
               continues rapidly.
             </p>
             <div className="c-about__button">
