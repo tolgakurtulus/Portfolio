@@ -37,7 +37,9 @@ const About = () => {
               continues rapidly.
             </p>
             <div className="c-about__button">
-              <Button color={"black"} title={"My Resume"}/>
+              <a href="/Portfolio/img/Tolga-Kurtulus-CV.pdf" rel="noopener noreferrer" target="_blank">
+                <Button color={"black"} title={"My Resume"}/>
+              </a>
             </div>
           </div>
           <div className="c-about__right">

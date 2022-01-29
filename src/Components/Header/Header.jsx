@@ -30,9 +30,6 @@ const Header = (props) => {
     function portfolioClick() {
       props.handleMenuClick("portfolio");
     }
-    function contactClick() {
-      props.handleMenuClick("contact");
-    }
 
     return (
         <Navbar fixed="top" collapseOnSelect expand="lg" bg={scrollY > 0 ? "dark" : ""} variant="dark">
@@ -44,7 +41,6 @@ const Header = (props) => {
                 <Nav.Link onClick={homeClick} href="#home">Home</Nav.Link>
                 <Nav.Link onClick={aboutClick} href="#about">About</Nav.Link>
                 <Nav.Link onClick={portfolioClick} href="#portfolio">Portfolio</Nav.Link>
-                <Nav.Link onClick={contactClick} href="#contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
