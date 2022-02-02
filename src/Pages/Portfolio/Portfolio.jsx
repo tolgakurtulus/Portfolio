@@ -5,7 +5,6 @@ import Title from "../../Components/Title/Title.jsx";
 import DataInfo from "../../assets/data/data.js";
 import { Link } from "react-router-dom";
 
-
 const Portfolio = () => {
   let category;
   let resultData;
@@ -21,7 +20,6 @@ const Portfolio = () => {
         return el.category === category;
       });
     }
-
     setCategoryData(resultData);
   };
 
@@ -64,7 +62,8 @@ const Portfolio = () => {
               <Link className="c-portfolio__item-container" to={`/Portfolio/${item.titlelink}`} target="_blank">
                 <div key={item.id} className="c-portfolio__item">
                   <div className="c-portfolio__item-img">
-                    <img src={`/Portfolio/img/${item.img}`} alt={item.title} />
+                    <div style={{backgroundImage: `url(/Portfolio/img/${item.img})`}} alt={item.title} />
+                    {/* <img style={{backgroundImage: `url(${Background})`}} src={`/Portfolio/img/${item.img}`} alt={item.title} /> */}
                     <div className="c-portfolio__item-overlay">
                       <div className="c-portfolio__item-overlay-info">
                         <h6>{item.title}</h6>
