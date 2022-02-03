@@ -6,6 +6,7 @@ import "./App.scss";
 
 const MainPage = lazy(() => import("./Pages/MainPage/MainPage.jsx"));
 const PortfolioDetail = lazy(() => import("./Pages/PortfolioDetail/PortfolioDetail.jsx"));
+const NotFound = lazy(() => import("./Pages/NotFound/NotFound.jsx"));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               />
             );
           })}
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </Suspense>
     </div>
