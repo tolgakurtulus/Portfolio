@@ -1,14 +1,17 @@
 .c-portfolio-detail {
   background-color: #343a40;
   width: 100%;
-  padding: 50px 200px;
+
+  &__container {
+    padding: 50px 200px;
+  }
 
   &__home {
     width: 150px;
 
     a {
       color: white;
-      
+
       &:hover {
         color: white;
         text-decoration: underline;
