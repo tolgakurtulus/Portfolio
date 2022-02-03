@@ -16,7 +16,7 @@ const DataInfo = [
     titlelink: "Portfolio",
     img: "portfolio.png",
     language: "React",
-    tag: "React, Hook, Scss",
+    tag: "React, Hook, Scss, Lazy-Suspense, React.memo",
     category: "react",
     link: "https://tolgakurtulus.github.io/Portfolio/",
     made: "HomeOffice",

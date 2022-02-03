@@ -4,8 +4,6 @@ import "./PortfolioDetail.scss";
 
 const PortfolioDetail = (item) => {
 
-  console.log("6");
-
   const { img, language, tag, title, link} = item.item;
 
   return (
@@ -20,7 +18,7 @@ const PortfolioDetail = (item) => {
           <h1>{title}</h1>
         </div>
         <div className="c-portfolio-detail__img">
-          <img src={`/Portfolio/img/${img}`} alt={title} />
+          <img src={`/Portfolio/img/${img}`} alt={title} loading="lazy"/>
         </div>
         <div className="c-portfolio-detail__item">
           <p><b>Js Library: </b>{language}</p>
@@ -39,4 +37,4 @@ const PortfolioDetail = (item) => {
   );
 };
 
-export default PortfolioDetail;
+export default React.memo(PortfolioDetail);

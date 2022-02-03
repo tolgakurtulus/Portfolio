@@ -4,7 +4,7 @@ import "./LoadingContainer.scss";
 const LoadingContainer = () => {
   return (
     <>
-      <span class="smooth spinner" />
+      <span className="smooth spinner" />
     </>
   );
 };

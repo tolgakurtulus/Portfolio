@@ -5,7 +5,7 @@ import About from "../About/About.jsx";
 import Portfolio from "../Portfolio/Portfolio.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 
-const Mainz = () => {
+const MainPage = () => {
   const homeScroll = useRef();
   const aboutScroll = useRef();
   const portfolioScroll = useRef();
@@ -33,9 +33,8 @@ const Mainz = () => {
         <Portfolio />
       </div>
       <Footer />
-
     </>
   );
 };
 
-export default Mainz;
+export default MainPage;
