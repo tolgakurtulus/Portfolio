@@ -60,7 +60,8 @@ const Portfolio = () => {
         <div className="c-portfolio__row">
           {categoryData.map((item) => {
             return (
-              <Link className="c-portfolio__item-container" to={`/Portfolio/${item.titlelink}`} target="_blank">
+              // <Link className="c-portfolio__item-container" to={`/Portfolio/${item.titlelink}`} target="_blank">
+              <Link className="c-portfolio__item-container" to={`/Portfolio/${item.titlelink}`}>
                 <div key={item.id} className="c-portfolio__item">
                   <div className="c-portfolio__item-img">
                     <div style={{backgroundImage: `url(/Portfolio/img/${item.img})`}} alt={item.title} />
