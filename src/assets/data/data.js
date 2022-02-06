@@ -89,7 +89,7 @@ const DataInfo = [
     made: "Pixelplus",
   },
   {
-    id: 8,
+    id: 40,
     title: "Bonus Piu",
     titlelink: "BonusPiu",
     img: "bonuspiu.png",
@@ -166,7 +166,7 @@ const DataInfo = [
     made: "Pixelplus",
   },
   {
-    id: 15,
+    id: 41,
     title: "Emlak Bankası",
     titlelink: "EmlakBankasi",
     img: "emlakbankasi.png",
@@ -188,7 +188,7 @@ const DataInfo = [
     made: "Pixelplus",
   },
   {
-    id: 14,
+    id: 43,
     title: "Form Sünger",
     titlelink: "FormSunger",
     img: "formsunger.png",
@@ -210,7 +210,7 @@ const DataInfo = [
     made: "Pixelplus",
   },
   {
-    id: 16,
+    id: 42,
     title: "Gümüşsuyu Halı Kurumsal",
     titlelink: "GumussuyuHaliKurumsal",
     img: "gumussuyuhalikurumsal.png",

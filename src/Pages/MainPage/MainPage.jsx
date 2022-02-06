@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Header from "../../Components/Header/Header.jsx";
 import Homepage from "../HomePage/HomePage.jsx";
 import About from "../About/About.jsx";
@@ -9,6 +9,14 @@ const MainPage = () => {
   const homeScroll = useRef();
   const aboutScroll = useRef();
   const portfolioScroll = useRef();
+  
+  useEffect(() => {
+    let getQueryString = window.location.search;
+    let getQueryStringHash = window.location.hash;
+    if(getQueryString === "?portfolioback" && getQueryStringHash === '') {
+      portfolioScroll.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
+    }
+  }, []);
 
   const handleMenuClick = (item) => {
     if(item === "home") {

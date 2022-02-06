@@ -10,7 +10,7 @@ const PortfolioDetail = (item) => {
     <div className="c-portfolio-detail">
       <div className="c-portfolio-detail__container">
         <div className="c-portfolio-detail__home">
-          <Link to={`/Portfolio`}>
+          <Link to={`/Portfolio?portfolioback`}>
             <h2>← Home</h2>
           </Link>
         </div>
