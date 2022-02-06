@@ -36,7 +36,7 @@ const DataInfo = [
     id: 4,
     title: "AkYatırım",
     titlelink: "AkYatirim",
-    img: "AkYatirim.png",
+    img: "akyat.png",
     language: "Jquery / Javascript",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     category: "js",
