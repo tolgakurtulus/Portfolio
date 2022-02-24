@@ -4,10 +4,20 @@
 
   &__container {
     padding: 50px 200px;
+    @media only screen and (max-width: 1200px) {
+      padding: 20px 50px !important;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 20px 5% !important;
+    }
   }
 
   &__home {
     width: 150px;
+
+    @media only screen and (max-width: 768px) {
+      width: 125px;
+    }
 
     a {
       color: white;
@@ -24,6 +34,10 @@
     h1 {
       color: white;
       text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 25px;
     }
   }
 

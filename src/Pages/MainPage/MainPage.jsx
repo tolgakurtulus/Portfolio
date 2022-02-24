@@ -40,7 +40,6 @@ const MainPage = () => {
       <div ref={portfolioScroll}>
         <Portfolio />
       </div>
-      <Footer />
     </>
   );
 };

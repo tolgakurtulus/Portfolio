@@ -8,4 +8,11 @@
       font-size: 25px !important;
     }
   }
+
+  @media only screen and (max-width: 1200px) {
+    padding: 20px 50px !important;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 20px 5% !important;
+  }  
 }

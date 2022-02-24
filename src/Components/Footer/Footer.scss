@@ -1,6 +1,24 @@
 .c-footer {
   background-color: black;
-  padding: 24px 200px !important;
+  padding: 0px 200px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media only screen and (max-width: 1200px) {
+    padding: 0px 20px;
+  }
+
+  &__container {
+    @media only screen and (max-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
 
   &__item {
     display: flex;
@@ -29,6 +47,10 @@
     h2 {
       font-size: 17px;
       color: white;
+      margin-bottom: 0px;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
   }
 }

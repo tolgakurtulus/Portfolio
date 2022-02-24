@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoadingContainer from "./Components/LoadingContainer/LoadingContainer.jsx";
 import DataInfo from "./assets/data/data.js";
+import Footer from "./Components/Footer/Footer.jsx";
 import "./App.scss";
 
 const MainPage = lazy(() => import("./Pages/MainPage/MainPage.jsx"));
@@ -26,6 +27,7 @@ function App() {
           })}
           <Route path="*" element={<NotFound/>} />
         </Routes>
+        <Footer />
       </Suspense>
     </div>
   );
