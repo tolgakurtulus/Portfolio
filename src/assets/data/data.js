@@ -33,6 +33,17 @@ const DataInfo = [
     made: "Pixelplus",
   },
   {
+    id: 46,
+    title: "Türkiye Bağımlılık Dizini",
+    titlelink: "TurkiyeBagimlilikDizini",
+    img: "bagimlilikdizini.png",
+    language: "Jquery / Javascript",
+    tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
+    category: "js",
+    link: "https://bagimlilikdizini.yesilay.org.tr/",
+    made: "Pixelplus",
+  },
+  {
     id: 4,
     title: "AkYatırım",
     titlelink: "AkYatirim",
