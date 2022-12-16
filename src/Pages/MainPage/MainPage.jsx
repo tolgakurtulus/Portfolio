@@ -3,7 +3,6 @@ import Header from "../../Components/Header/Header.jsx";
 import Homepage from "../HomePage/HomePage.jsx";
 import About from "../About/About.jsx";
 import Portfolio from "../Portfolio/Portfolio.jsx";
-import Footer from "../../Components/Footer/Footer.jsx";
 
 const MainPage = () => {
   const homeScroll = useRef();
