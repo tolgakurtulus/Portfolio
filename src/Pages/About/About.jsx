@@ -51,7 +51,7 @@ const About = () => {
               <ProgressBar variant="info" now={90} label={`90%`} animated/>
             </div>
             <div className="c-about__right-box">
-              <p>React & Redux & Next.js</p>
+              <p>React & Redux & Next.js & TypeScript</p>
               <ProgressBar variant="info" now={98} label={`98%`} animated/>
             </div>
             <div className="c-about__right-box">
