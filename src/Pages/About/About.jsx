@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div className="c-about__right">
             <div className="c-about__right-box">
-              <p>HTML & CSS & Jquery & Bootstrap</p>
+              <p>HTML & CSS & Jquery</p>
               <ProgressBar variant="info" now={99} label={`99%`} animated />
             </div>
             <div className="c-about__right-box">
@@ -51,12 +51,12 @@ const About = () => {
               <ProgressBar variant="info" now={90} label={`90%`} animated/>
             </div>
             <div className="c-about__right-box">
-              <p>React & Redux & Router</p>
-              <ProgressBar variant="info" now={80} label={`80%`} animated/>
+              <p>React & Redux & Next.js</p>
+              <ProgressBar variant="info" now={98} label={`98%`} animated/>
             </div>
             <div className="c-about__right-box">
-              <p>Next.js & Typescript & Gastsby.js</p>
-              <ProgressBar variant="info" now={40} label={`40%`} animated/>
+              <p>Bootsrap / Antd / DevE / Npm</p>
+              <ProgressBar variant="info" now={98} label={`98%`} animated/>
             </div>
             <div className="c-about__right-box">
               <p>Vue & Angular</p>
@@ -64,7 +64,7 @@ const About = () => {
             </div>
             <div className="c-about__right-box">
               <p>Python & Django & Deep Learning</p>
-              <ProgressBar variant="info" now={35} label={`35%`} animated/>
+              <ProgressBar variant="info" now={20} label={`20%`} animated/>
             </div>
           </div>
         </div>
