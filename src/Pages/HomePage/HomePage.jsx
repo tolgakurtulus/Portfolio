@@ -20,11 +20,11 @@ const HomePage = () => {
                   1500,
                   `I'm`,
                   1500,
-                  `I'm Frontend Developer`,
+                  `I'm Senior Frontend Developer`,
                   1500,
                   `I'm`,
                   1500,
-                  `I'm Software Engineer`,
+                  `I'm Senior Software Engineer`,
                   1500,
                 ]}
                 loop={Infinity}

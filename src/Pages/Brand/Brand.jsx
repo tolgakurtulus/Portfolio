@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Button from "../../Components/Button/Button.jsx";
 import Title from "../../Components/Title/Title.jsx";
 import DataInfo from "../../assets/data/data.js";
-import "./Portfolio.scss";
+import "./Brand.scss";
 
-const Portfolio = () => {
+const Brand = () => {
   let category;
   let resultData;
 
@@ -88,4 +88,4 @@ const Portfolio = () => {
   );
 };
 
-export default React.memo(Portfolio);
+export default React.memo(Brand);

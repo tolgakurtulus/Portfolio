@@ -1,52 +1,72 @@
 import React, { useState, useEffect } from "react";
-import "./Header.scss";
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Header.scss";
 
 const Header = (props) => {
+  const [scrollY, setScrollY] = useState(0);
 
-    const [scrollY, setScrollY] = useState(0);
+  const logit = () => {
+    setScrollY(window.pageYOffset);
+  }
 
-    function logit() {
-      setScrollY(window.pageYOffset);
-    }
-  
-    useEffect(() => {
-      function watchScroll() {
-        window.addEventListener("scroll", logit);
-      }
-      watchScroll();
-      return () => {
-        window.removeEventListener("scroll", logit);
-      };
-    }, []);
+  useEffect(() => {
+      window.addEventListener("scroll", logit);
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  }, []);
 
-    function homeClick() {
-      props.handleMenuClick("home");
-    }
-    function aboutClick() {
-      props.handleMenuClick("about");
-    }
-    function portfolioClick() {
-      props.handleMenuClick("portfolio");
-    }
-
-    return (
-        <Navbar fixed="top" collapseOnSelect expand="lg" bg={scrollY > 0 ? "dark" : ""} variant="dark">
-            <Navbar.Brand className="navbar__logo" href="#home">
-              <img src="/Portfolio/img/portfoliologosq.png" alt="Mail" loading="lazy" />{" "}
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto"></Nav>
-                <Nav>
-                <Nav.Link onClick={homeClick} href="#home">Home</Nav.Link>
-                <Nav.Link onClick={aboutClick} href="#about">About</Nav.Link>
-                <Nav.Link onClick={portfolioClick} href="#portfolio">Portfolio</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-      );    
+  return (
+    <Navbar
+      fixed="top"
+      collapseOnSelect
+      expand="lg"
+      bg={scrollY > 0 ? "dark" : ""}
+      variant="dark"
+    >
+      <Navbar.Brand className="navbar__logo" href="#home">
+        <img
+          src="/Portfolio/img/portfoliologosq.png"
+          alt="Mail"
+          loading="lazy"
+        />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto"></Nav>
+        <Nav>
+          <Nav.Link onClick={() => props.handleMenuClick("home")} href="#home">
+            Home
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => props.handleMenuClick("about")}
+            href="#about"
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => props.handleMenuClick("skill")}
+            href="#skill"
+          >
+            Skill
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => props.handleMenuClick("portfolio")}
+            href="#portfolio"
+          >
+            Portfolio
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => props.handleMenuClick("brand")}
+            href="#brand"
+          >
+            Brand
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 };
 
 export default React.memo(Header);

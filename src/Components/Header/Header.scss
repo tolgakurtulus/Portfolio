@@ -1,5 +1,5 @@
 .navbar {
-  padding: 20px 200px !important;
+  padding: 10px 200px !important;
   z-index: 2000;
   transition: background-color 0.85s, transform 0.85s;
 
@@ -10,14 +10,14 @@
   }
 
   &__logo img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 
   @media only screen and (max-width: 1200px) {
-    padding: 20px 50px !important;
+    padding: 10px 50px !important;
   }
   @media only screen and (max-width: 768px) {
-    padding: 20px 5% !important;
-  }  
+    padding: 10px 5% !important;
+  }
 }

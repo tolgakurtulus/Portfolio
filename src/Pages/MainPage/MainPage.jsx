@@ -2,12 +2,16 @@ import React, { useRef, useEffect } from "react";
 import Header from "../../Components/Header/Header.jsx";
 import Homepage from "../HomePage/HomePage.jsx";
 import About from "../About/About.jsx";
+import Skill from "../Skill/Skill.jsx";
 import Portfolio from "../Portfolio/Portfolio.jsx";
+import Brand from "../Brand/Brand.jsx";
 
 const MainPage = () => {
   const homeScroll = useRef();
   const aboutScroll = useRef();
+  const skillScroll = useRef();
   const portfolioScroll = useRef();
+  const brandScroll = useRef();
 
   useEffect(() => {
     let getQueryString = window.location.search;
@@ -34,8 +38,20 @@ const MainPage = () => {
         inline: "center",
         behavior: "smooth",
       });
+    } else if (item === "skill") {
+      skillScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
     } else if (item === "portfolio") {
       portfolioScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
+    } else if (item === "brand") {
+      brandScroll.current.scrollIntoView({
         block: "center",
         inline: "center",
         behavior: "smooth",
@@ -52,8 +68,14 @@ const MainPage = () => {
       <div ref={aboutScroll}>
         <About />
       </div>
+      <div ref={skillScroll}>
+        <Skill />
+      </div>
       <div ref={portfolioScroll}>
         <Portfolio />
+      </div>
+      <div ref={brandScroll}>
+        <Brand />
       </div>
     </>
   );
