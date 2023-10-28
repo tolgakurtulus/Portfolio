@@ -9,6 +9,11 @@
     }
   }
 
+  &__logo img {
+    width: 100px;
+    height: 100px;
+  }
+
   @media only screen and (max-width: 1200px) {
     padding: 20px 50px !important;
   }

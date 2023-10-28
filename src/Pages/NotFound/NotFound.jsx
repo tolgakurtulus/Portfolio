@@ -1,12 +1,10 @@
-// import React, { useState, useEffect } from 'react';
 import React from "react";
-import "./NotFound.scss";
 import { Link } from "react-router-dom";
+import "./NotFound.scss";
 
 const NotFound = () => {
   return (
     <>
-      {/* <div className="c-notfound" style={{ backgroundImage: `url(/Portfolio/img/403.jpg`}}> */}
       <div className="c-notfound">
         <div className="c-notfound__title">
           <h1>404</h1>

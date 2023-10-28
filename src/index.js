@@ -14,8 +14,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
+// ilk olarak npm i gh-pages --save-dev
+// package.json =  "homepage": "https://tolgakurtulus.github.io/Portfolio", ve script kısmına "deploy": "gh-pages -d build", ekle
 // yarn deploy ile değişiklikler yansır

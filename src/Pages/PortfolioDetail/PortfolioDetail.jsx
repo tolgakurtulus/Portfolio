@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./PortfolioDetail.scss";
 
 const PortfolioDetail = (item) => {
-
-  const { img, language, tag, title, link} = item.item;
+  const { img, language, tag, title, link } = item.item;
 
   return (
     <div className="c-portfolio-detail">
@@ -18,19 +17,31 @@ const PortfolioDetail = (item) => {
           <h1>{title}</h1>
         </div>
         <div className="c-portfolio-detail__img">
-          <img src={`/Portfolio/img/${img}`} alt={title} loading="lazy"/>
+          <img src={`/Portfolio/img/${img}`} alt={title} loading="lazy" />
         </div>
         <div className="c-portfolio-detail__item">
-          <p><b>Js Library: </b>{language}</p>
+          <p>
+            <b>Js Library: </b>
+            {language}
+          </p>
         </div>
         <div className="c-portfolio-detail__item">
-          <p><b>Languages Used: </b> {tag}</p>
+          <p>
+            <b>Languages Used: </b> {tag}
+          </p>
         </div>
         <div className="c-portfolio-detail__item">
-          <p><b> In Which Company It Was Made: </b> PixelPlus</p>
+          <p>
+            <b> In Which Company It Was Made: </b> PixelPlus
+          </p>
         </div>
         <div className="c-portfolio-detail__item">
-          <p><b> Site Link: </b> <a href={link} rel="noopener noreferrer" target="_blank">{link}</a></p>
+          <p>
+            <b> Site Link: </b>{" "}
+            <a href={link} rel="noopener noreferrer" target="_blank">
+              {link}
+            </a>
+          </p>
         </div>
       </div>
     </div>

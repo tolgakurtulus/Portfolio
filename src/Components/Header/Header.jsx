@@ -33,7 +33,9 @@ const Header = (props) => {
 
     return (
         <Navbar fixed="top" collapseOnSelect expand="lg" bg={scrollY > 0 ? "dark" : ""} variant="dark">
-            <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+            <Navbar.Brand className="navbar__logo" href="#home">
+              <img src="/Portfolio/img/portfoliologosq.png" alt="Mail" loading="lazy" />{" "}
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>

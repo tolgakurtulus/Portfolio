@@ -8,23 +8,39 @@ const MainPage = () => {
   const homeScroll = useRef();
   const aboutScroll = useRef();
   const portfolioScroll = useRef();
-  
+
   useEffect(() => {
     let getQueryString = window.location.search;
     let getQueryStringHash = window.location.hash;
-    if(getQueryString === "?portfolioback" && getQueryStringHash === '') {
-      portfolioScroll.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
+    if (getQueryString === "?portfolioback" && getQueryStringHash === "") {
+      portfolioScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
     }
   }, []);
 
   const handleMenuClick = (item) => {
-    if(item === "home") {
-     homeScroll.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
+    if (item === "home") {
+      homeScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
     } else if (item === "about") {
-     aboutScroll.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
+      aboutScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
     } else if (item === "portfolio") {
-      portfolioScroll.current.scrollIntoView({block: 'center', inline: 'center', behavior: 'smooth'});
-     }
+      portfolioScroll.current.scrollIntoView({
+        block: "center",
+        inline: "center",
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
