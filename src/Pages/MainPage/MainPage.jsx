@@ -2,9 +2,9 @@ import React, { useRef, useEffect } from "react";
 import Header from "../../Components/Header/Header.jsx";
 import Homepage from "../HomePage/HomePage.jsx";
 import About from "../About/About.jsx";
-import Skill from "../Skill/Skill.jsx";
+import Skill from "../Skill";
 import Portfolio from "../Portfolio/Portfolio.jsx";
-import Brand from "../Brand/Brand.jsx";
+import Brand from "../Brand";
 
 const MainPage = () => {
   const homeScroll = useRef();

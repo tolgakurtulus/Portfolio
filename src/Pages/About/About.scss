@@ -4,9 +4,9 @@
   height: 100%;
 
   &__container {
-    padding: 100px 200px;
+    padding: 75px 200px;
     @media only screen and (max-width: 1200px) {
-      padding: 100px 50px !important;
+      padding: 50px !important;
     }
     @media only screen and (max-width: 768px) {
       padding: 50px 5% !important;

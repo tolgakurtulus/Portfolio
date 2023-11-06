@@ -22,10 +22,6 @@ const HomePage = () => {
                   1500,
                   `I'm Senior Frontend Developer`,
                   1500,
-                  `I'm`,
-                  1500,
-                  `I'm Senior Software Engineer`,
-                  1500,
                 ]}
                 loop={Infinity}
                 wrapper="p"

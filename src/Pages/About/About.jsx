@@ -1,16 +1,18 @@
 import React from "react";
-import Button from '../../Components/Button/Button.jsx';
+import Button from "../../Components/Button/Button.jsx";
 import "./About.scss";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import Title from "../../Components/Title/Title.jsx";
 
 const About = () => {
   return (
     <div className="c-about">
       <div className="c-about__container">
+        <Title title={"About"} />
         <div className="c-about__row">
           <div className="c-about__left">
             <h2>Hello, I'm Tolga Kurtuluş</h2>
-            <h3>Front End Developer & Software Engineer</h3>,
+            <h3>Senior Frontend Developer</h3>,
             <p>I want to divide my software life into 3 periods.</p>
             <p>
               <b>1. </b>I was born in 1995 in Istanbul and I still live in
@@ -31,13 +33,18 @@ const About = () => {
             <p>
               <b>3. </b>After graduating from university, I started working at
               PixelPlus company. This was my first full time job as a frontend
-              developer.I have developed more than thirty projects from scratch and received 3
-              awards thanks to these projects. I am currently working at Odeon technology. Currently, my career life
-              continues rapidly.
+              developer.I have developed more than thirty projects from scratch
+              and received 3 awards thanks to these projects. I am currently
+              working at Odeon technology. Currently, my career life continues
+              rapidly.
             </p>
             <div className="c-about__button">
-              <a href="/Portfolio/img/Tolga-Kurtulus-CV.pdf" rel="noopener noreferrer" target="_blank">
-                <Button color={"black"} title={"My Resume"}/>
+              <a
+                href="/Portfolio/img/Tolga-Kurtulus-CV.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Button color={"black"} title={"My Resume"} />
               </a>
             </div>
           </div>
@@ -48,23 +55,23 @@ const About = () => {
             </div>
             <div className="c-about__right-box">
               <p>Javascript</p>
-              <ProgressBar variant="info" now={90} label={`90%`} animated/>
+              <ProgressBar variant="info" now={90} label={`90%`} animated />
             </div>
             <div className="c-about__right-box">
               <p>React & Redux & Next.js & TypeScript</p>
-              <ProgressBar variant="info" now={98} label={`98%`} animated/>
+              <ProgressBar variant="info" now={98} label={`98%`} animated />
             </div>
             <div className="c-about__right-box">
               <p>Bootsrap / Antd / DevE / Npm</p>
-              <ProgressBar variant="info" now={98} label={`98%`} animated/>
+              <ProgressBar variant="info" now={98} label={`98%`} animated />
             </div>
             <div className="c-about__right-box">
               <p>Vue & Angular</p>
-              <ProgressBar variant="info" now={15} label={`15%`} animated/>
+              <ProgressBar variant="info" now={15} label={`15%`} animated />
             </div>
             <div className="c-about__right-box">
               <p>Python & Django & Deep Learning</p>
-              <ProgressBar variant="info" now={20} label={`20%`} animated/>
+              <ProgressBar variant="info" now={20} label={`20%`} animated />
             </div>
           </div>
         </div>
