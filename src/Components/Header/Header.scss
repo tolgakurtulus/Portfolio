@@ -5,13 +5,15 @@
 
   .navbar-nav {
     a {
-      font-size: 25px !important;
+      font-size: 28px !important;
+      font-family: "Dancing Script", cursive;
+      color: rgba(255,255,255,.8) !important;
     }
   }
 
   &__logo img {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
   }
 
   @media only screen and (max-width: 1200px) {

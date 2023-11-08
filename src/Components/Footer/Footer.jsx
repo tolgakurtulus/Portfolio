@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="c-footer__item">
-          <h2>© 2022 TOLGA KURTULUŞ. ALL RIGHTS RESERVED</h2>
+          <h2>©2023 TOLGA KURTULUŞ. ALL RIGHTS RESERVED</h2>
         </div>
       </div>
     </div>

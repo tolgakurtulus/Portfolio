@@ -11,7 +11,7 @@ const Brand = () => {
         <div className={styles["c-sb__row"]}>
           {brandData.map((item) => {
             return (
-              <a target="_blank" href={item.href} className={styles["c-sb__item"]}>
+              <a  rel="noreferrer" target="_blank" href={item.href} className={styles["c-sb__item"]}>
                 <img
                   src={`/Portfolio/img/brand/${item.img}`}
                   alt="html"

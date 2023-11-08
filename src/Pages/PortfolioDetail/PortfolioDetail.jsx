@@ -17,7 +17,7 @@ const PortfolioDetail = (item) => {
           <h1>{title}</h1>
         </div>
         <div className="c-portfolio-detail__img">
-          <img src={`/Portfolio/img/${img}`} alt={title} loading="lazy" />
+          <img src={`/Portfolio/img/project/${img}`} alt={title} loading="lazy" />
         </div>
         <div className="c-portfolio-detail__item">
           <p>

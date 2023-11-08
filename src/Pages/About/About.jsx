@@ -50,7 +50,7 @@ const About = () => {
           </div>
           <div className="c-about__right">
             <div className="c-about__right-box">
-              <p>HTML & CSS & Jquery</p>
+              <p>HTML & CSS & JQuery</p>
               <ProgressBar variant="info" now={99} label={`99%`} animated />
             </div>
             <div className="c-about__right-box">

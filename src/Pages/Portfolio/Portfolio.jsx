@@ -1,63 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../../Components/Button/Button.jsx";
 import Title from "../../Components/Title/Title.jsx";
 import DataInfo from "../../assets/data/data.js";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
-  let category;
-  let resultData;
-
-  const [categoryData, setCategoryData] = useState(DataInfo);
-
-  const handleClick = (e) => {
-    category = e;
-    if (category === "all") {
-      resultData = DataInfo;
-    } else {
-      resultData = DataInfo.filter(function (el) {
-        return el.category === category;
-      });
-    }
-    setCategoryData(resultData);
-  };
-
   return (
     <div className="c-portfolio">
       <div className="c-portfolio__container">
-        <Title title={"Projects"} />
-        <div className="c-portfolio__tab">
-          <div className="c-portfolio__tab-item">
-            <Button
-              size={"xl"}
-              color={"transparent"}
-              title={"All"}
-              value={"all"}
-              handleClick={handleClick}
-            />
-          </div>
-          <div className="c-portfolio__tab-item">
-            <Button
-              size={"xl"}
-              color={"transparent"}
-              title={"React"}
-              value={"react"}
-              handleClick={handleClick}
-            />
-          </div>
-          <div className="c-portfolio__tab-item">
-            <Button
-              size={"xl"}
-              color={"transparent"}
-              title={"Js & Jquery"}
-              value={"js"}
-              handleClick={handleClick}
-            />
-          </div>
-        </div>
+        <Title title={"Portfolio"} />
         <div className="c-portfolio__row">
-          {categoryData.map((item) => {
+          {DataInfo.map((item) => {
             return (
               <Link
                 key={item.id}
@@ -68,7 +21,7 @@ const Portfolio = () => {
                   <div className="c-portfolio__item-img">
                     <div
                       style={{
-                        backgroundImage: `url(/Portfolio/img/${item.img})`,
+                        backgroundImage: `url(/Portfolio/img/project/${item.img})`,
                       }}
                       alt={item.title}
                     />

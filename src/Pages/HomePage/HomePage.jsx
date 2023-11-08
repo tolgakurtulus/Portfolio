@@ -9,9 +9,16 @@ const HomePage = () => {
         <div className="c-homepage-container">
           <div className="c-homepage-container__row">
             <div className="c-homepage-container__col">
-              <h2>Welcome</h2>
+              <div className="c-homepage-container__circle">
+                <div className="c-homepage-container__circle-item"></div>
+              </div>
             </div>
-            <div className="c-homepage-container__col">
+            <div className="c-homepage-container__welcome">
+              <h1 data-text="Welcome">
+                <mark>Welcome</mark>
+              </h1>
+            </div>
+            <div className="c-homepage-container__typical">
               <Typical
                 steps={[
                   `I'm`,

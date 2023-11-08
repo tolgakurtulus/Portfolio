@@ -54,7 +54,7 @@ export const brandData = [
   { title: "Körfez Ulaştırma", href: "https://www.korfezulastirma.com.tr/", img: "korfezulastirma.png" },
   { title: "Odeonbeds", href: "https://odeonbeds.com/", img: "odeonbedslogo.png" },
   { title: "Odeonbeds B2B", href: "https://b2b.odeonbeds.com/HomeV2/Login?ReturnUrl=%2F", img: "odeonbedslogonew.png" },
-  { title: "Pixelplus", href: "test", img: "pixelplus.png" },
+  { title: "Pixelplus", href: "https://www.pixelplus.net/", img: "pixelplus.png" },
   { title: "Odeontechnology", href: "https://www.odeontechnology.com/", img: "odeontechnology.png" },
   { title: "Profilo", href: "https://www.profilo.com/", img: "profilo.png" },
   { title: "Sunmar", href: "https://www.sunmar.ru/", img: "sunmar.png" },

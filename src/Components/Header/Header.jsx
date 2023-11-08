@@ -49,7 +49,7 @@ const Header = (props) => {
             onClick={() => props.handleMenuClick("skill")}
             href="#skill"
           >
-            Skill
+            Skills
           </Nav.Link>
           <Nav.Link
             onClick={() => props.handleMenuClick("portfolio")}
@@ -61,7 +61,7 @@ const Header = (props) => {
             onClick={() => props.handleMenuClick("brand")}
             href="#brand"
           >
-            Brand
+            Brands
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

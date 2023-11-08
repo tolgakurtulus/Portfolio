@@ -28,12 +28,6 @@
     flex: 0 0 49%;
     max-width: 49%;
 
-    @media only screen and (max-width: 768px) {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 30px;
-    }
-
     h2,
     h3,
     p {
@@ -45,11 +39,17 @@
     }
 
     p {
-      opacity: 0.9;
+      font-size:  18px;
     }
 
     b {
       font-size: 18px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
     }
   }
 
@@ -70,7 +70,7 @@
     margin-bottom: 25px;
 
     p {
-      font-size: 19px;
+      font-size: 21px;
       margin: 5px !important;
       color: white;
       opacity: 0.9;
