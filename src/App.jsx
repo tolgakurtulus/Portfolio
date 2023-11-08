@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoadingContainer from "./Components/LoadingContainer/LoadingContainer.jsx";
-import DataInfo from "./assets/data/data.js";
+import { projectData } from "./db/index.js";
 import Footer from "./Components/Footer/Footer.jsx";
 import "./App.scss";
 
@@ -15,7 +15,7 @@ function App() {
       <Suspense fallback={<LoadingContainer />}>
         <Routes>
           <Route exact path="/Portfolio" element={<MainPage />} />
-          {DataInfo.map((item) => {
+          {projectData.map((item) => {
             return (
               <Route
                 key={item}

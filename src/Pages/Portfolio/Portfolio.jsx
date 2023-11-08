@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Title from "../../Components/Title/Title.jsx";
-import DataInfo from "../../assets/data/data.js";
+import { projectData } from "../../db/index.js";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="c-portfolio__container">
         <Title title={"Portfolio"} />
         <div className="c-portfolio__row">
-          {DataInfo.map((item) => {
+          {projectData.map((item) => {
             return (
               <Link
                 key={item.id}
