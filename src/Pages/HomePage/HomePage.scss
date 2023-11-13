@@ -1,4 +1,4 @@
-@keyframes myfirst {
+@keyframes circleMove {
   0% {
     left: 0px;
   }
@@ -236,7 +236,7 @@
       inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00,
       10px 0 80px #f55;
 
-    animation: myfirst 3s infinite;
+    animation: circleMove 3s infinite;
     animation-direction: alternate;
   }
 

@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoadingContainer from "./Components/LoadingContainer/LoadingContainer.jsx";
-import { projectData } from "./db/index.js";
 import Footer from "./Components/Footer/Footer.jsx";
+import { projectData } from "./db/index.js";
 import "./App.scss";
 
 const MainPage = lazy(() => import("./Pages/MainPage/MainPage.jsx"));
-const PortfolioDetail = lazy(() => import("./Pages/PortfolioDetail/PortfolioDetail.jsx"));
+const PortfolioDetail = lazy(() => import("./Pages/PortfolioDetail"));
 const NotFound = lazy(() => import("./Pages/NotFound/NotFound.jsx"));
 
 function App() {

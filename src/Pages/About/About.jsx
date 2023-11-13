@@ -44,7 +44,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button color={"black"} title={"My Resume"} />
+                <Button color={"transparent"} title={"My Resume"} />
               </a>
             </div>
           </div>

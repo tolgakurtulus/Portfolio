@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@keyframes logoMove {
+  0% {
+    width: 90px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 90px;
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: skew(0) skewY(0);
+  }
+  50% {
+    transform: skew(-6deg) skewY(-6deg);
+  }
+  to {
+    transform: skew(0) skewY(0);
+  }
+}
+
+.c-portfolio-detail {
+  p,
+  h1,
+  a,
+  div,
+  span,
+  label {
+    font-family: "Inter", sans-serif;
+  }
+
+  &__backgroud {
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      background: linear-gradient(to right, #060918, rgba(6, 9, 24, 0.5));
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      content: "";
+    }
+
+    img {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 25px;
+    z-index: 2;
+
+    img {
+      width: 175px;
+
+      &:hover {
+        animation: jiggle 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+      }
+    }
+  }
+
+  &__back {
+    position: absolute;
+    top: 15%;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    text-decoration: none;
+
+    &:hover {
+      p {
+        opacity: 0.7;
+      }
+
+      svg {
+        opacity: 0.7;
+        transform: translate(-4px, 0) rotate(0) skew(0) skewY(0) scaleX(1)
+          scaleY(1);
+      }
+    }
+
+    p,
+    svg {
+      transition-property: opacity, transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 0.5s;
+    }
+
+    svg {
+      width: 30px;
+      margin-right: 10px;
+      margin-top: 1px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      color: #fffef9;
+    }
+  }
+
+  &__desc {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 200px;
+
+    label {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fffef9e6;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 60px;
+      color: #fffef9;
+      font-weight: 700;
+      margin: 16px 0px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: #fffef9e6;
+      max-width: 650px;
+      margin-bottom: 50px;
+    }
+
+    hr {
+      border: 0;
+      margin: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        rgba(255, 254, 249, 0.8),
+        rgba(0, 0, 0, 0.1)
+      );
+    }
+
+    button {
+      margin-top: 30px;
+    }
+  }
+}

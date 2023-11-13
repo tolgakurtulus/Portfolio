@@ -1,61 +1,67 @@
-.c-button {
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #212529;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 6px 12px;
-  font-size: 17px;
-  border-radius: 4px;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  text-transform: uppercase;
-  color: red;
+$cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$white: #fff;
+$black: #000;
 
-  &.light {
-    color: #000;
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    
-    &:hover {
-      color: #f8f9fa;
-      background-color: #000;
+.c-button {
+  font-size: 18px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 23px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  min-width: 300px;
+  min-height: 60px;
+  font-weight: 700;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.6s $cubic;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-95%);
+    transition: transform 0.6s $cubic;
+  }
+
+  &:hover {
+    &:before {
+      transform: translateX(0);
     }
   }
 
   &.black {
-    color: #f8f9fa;
-    background-color: #000;
-    border: 1px solid #f8f9fa;
-    
+    color: $white;
+    background: $black;
+    border: 1px solid $white;
+
+    &:before {
+      background: $white;
+    }
+
     &:hover {
-      color: #000;
-      background-color: #f8f9fa;
-      border: 1px solid #f8f9fa;
+      color: $black;
     }
   }
 
   &.transparent {
-    color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    
-    &:hover {
-      color: #f8f9fa;
-      background-color: #000;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+
+    &:before {
+      background: $white;
     }
-  }
 
-  &.radius {
-    border-radius: 15px;
-  }
-
-  &.xl {
-    width: 175px;
-    font-size: 20px;
-    padding: 10px 0px !important;
+    &:hover {
+      color: $black;
+    }
   }
 }
