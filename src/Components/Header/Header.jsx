@@ -27,7 +27,7 @@ const Header = (props) => {
     >
       <Navbar.Brand className="navbar__logo" href="#home">
         <img
-          src="/Portfolio/img/portfoliologosq.png"
+          src="/Portfolio/img/portfoliologosq.webp"
           alt="Mail"
           loading="lazy"
         />
