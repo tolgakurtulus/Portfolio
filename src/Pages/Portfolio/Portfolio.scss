@@ -14,7 +14,7 @@
   }
 
   &__container {
-    padding: 75px 200px;
+    padding: 25px 200px;
     @media only screen and (max-width: 1200px) {
       padding: 50px !important;
     }
@@ -48,7 +48,7 @@
     align-items: center;
     flex-wrap: wrap;
     border: 1px solid #f8f9fa;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 150px);
     overflow-y: scroll;
 
     &::-webkit-scrollbar-thumb {
