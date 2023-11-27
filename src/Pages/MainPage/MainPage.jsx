@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Header from "../../Components/Header/Header.jsx";
+import Header from "../../Components/Header";
 import Homepage from "../HomePage/HomePage.jsx";
 import About from "../About/About.jsx";
 import Skill from "../Skill";
