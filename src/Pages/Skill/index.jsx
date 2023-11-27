@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../Components/Title/Title.jsx";
+import Title from "../../Components/Title";
 import { skillData } from "../../db/index.js";
 import styles from "./styles.module.scss";
 

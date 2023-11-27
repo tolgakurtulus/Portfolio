@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "../../Components/Button";
-import Title from "../../Components/Title/Title.jsx";
+import Title from "../../Components/Title";
 import "./About.scss";
 
 const About = () => {

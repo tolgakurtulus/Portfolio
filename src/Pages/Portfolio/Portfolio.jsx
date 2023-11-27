@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Title from "../../Components/Title/Title.jsx";
+import Title from "../../Components/Title";
 import { projectData } from "../../db/index.js";
 import "./Portfolio.scss";
 
