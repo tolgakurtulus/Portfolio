@@ -1,10 +1,10 @@
 import React from "react";
-import "./LoadingContainer.scss";
+import styles from "./styles.module.scss";
 
 const LoadingContainer = () => {
   return (
     <>
-      <span className="smooth spinner" />
+      <span className={`${styles.spinner} ${styles.smooth}`} />
     </>
   );
 };

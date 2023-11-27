@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import LoadingContainer from "./Components/LoadingContainer/LoadingContainer.jsx";
+import LoadingContainer from "./Components/LoadingContainer";
 import Footer from "./Components/Footer";
 import { projectData } from "./db/index.js";
 import "./App.scss";
