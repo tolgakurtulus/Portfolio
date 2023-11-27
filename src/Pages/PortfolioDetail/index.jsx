@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../Components/Button/Button";
+import Button from "../../Components/Button";
 import { Link } from "react-router-dom";
 import { Arrow } from "../../assets/svg/arrow";
 import styles from "./styles.module.scss";
