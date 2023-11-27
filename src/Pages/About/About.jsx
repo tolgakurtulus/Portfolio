@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../../Components/Button/Button.jsx";
-import "./About.scss";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import Button from "../../Components/Button/Button.jsx";
 import Title from "../../Components/Title/Title.jsx";
+import "./About.scss";
 
 const About = () => {
   return (
@@ -34,11 +34,11 @@ const About = () => {
               <b>3. </b>After graduating from university, I started working at
               PixelPlus company. This was my first full time job as a frontend
               developer.I have developed more than thirty projects from scratch
-              and received 3 awards thanks to these projects. I am currently
-              working at Odeon technology. Currently, my career life continues
-              rapidly.
+              and received 3 awards thanks to these projects. I worked at Odeon
+              Software & Technology for 3 years. I am currently working at
+              Bilyoner and my career life is continuing rapidly here.
             </p>
-            <div className="c-about__button">
+            <div className="c-about__button   ">
               <a
                 href="/Portfolio/img/Tolga-Kurtulus-CV.pdf"
                 rel="noopener noreferrer"

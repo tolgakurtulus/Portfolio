@@ -1,0 +1,30 @@
+@import "../../assets/scss/core.scss";
+
+.c-nav {
+  padding: 10px 200px !important;
+  z-index: 2000;
+  transition: background-color 0.85s, transform 0.85s;
+
+  &__button a {
+    font-size: 23px !important;
+    font-family: "Dancing Script", cursive;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  &__logo img {
+    width: 125px;
+  }
+
+  @media only screen and (max-width: $xl) {
+    padding: 10px 50px !important;
+  }
+  @media only screen and (max-width: $md) {
+    padding: 10px 5% !important;
+  }
+}
+
+:global {
+  .bg-dark {
+    background-color: #0c090a !important;
+  }
+}

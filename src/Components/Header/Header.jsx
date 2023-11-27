@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Header.scss";
+import styles from "./styles.module.scss";
 
 const Header = (props) => {
   const [scrollY, setScrollY] = useState(0);
 
   const logit = () => {
     setScrollY(window.pageYOffset);
-  }
+  };
 
   useEffect(() => {
-      window.addEventListener("scroll", logit);
+    window.addEventListener("scroll", logit);
     return () => {
       window.removeEventListener("scroll", logit);
     };
@@ -24,8 +24,9 @@ const Header = (props) => {
       expand="lg"
       bg={scrollY > 0 ? "dark" : ""}
       variant="dark"
+      className={styles["c-nav"]}
     >
-      <Navbar.Brand className="navbar__logo" href="#home">
+      <Navbar.Brand className={styles["c-nav__logo"]} href="#home">
         <img
           src="/Portfolio/img/portfoliologosq.webp"
           alt="Mail"
@@ -33,7 +34,10 @@ const Header = (props) => {
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse
+        className={styles["c-nav__button"]}
+        id="responsive-navbar-nav"
+      >
         <Nav className="mr-auto"></Nav>
         <Nav>
           <Nav.Link onClick={() => props.handleMenuClick("home")} href="#home">
