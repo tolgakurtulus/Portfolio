@@ -2,15 +2,15 @@ import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "../../Components/Button";
 import Title from "../../Components/Title";
-import "./About.scss";
+import styles from "./styles.module.scss";
 
 const About = () => {
   return (
-    <div className="c-about">
-      <div className="c-about__container">
+    <div className={styles["c-about"]}>
+      <div className={styles["c-about__container"]}>
         <Title title={"About"} />
-        <div className="c-about__row">
-          <div className="c-about__left">
+        <div className={styles["c-about__row"]}>
+          <div className={styles["c-about__left"]}>
             <h2>Hello, I'm Tolga Kurtuluş</h2>
             <h3>Senior Frontend Developer</h3>,
             <p>I want to divide my software life into 3 periods.</p>
@@ -38,7 +38,7 @@ const About = () => {
               Software & Technology for 3 years. I am currently working at
               Bilyoner and my career life is continuing rapidly here.
             </p>
-            <div className="c-about__button   ">
+            <div className={styles["c-about__button"]}>
               <a
                 href="/Portfolio/img/Tolga-Kurtulus-CV.pdf"
                 rel="noopener noreferrer"
@@ -48,28 +48,28 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="c-about__right">
-            <div className="c-about__right-box">
+          <div className={styles["c-about__right"]}>
+            <div className={styles["c-about__right-box"]}>
               <p>HTML & CSS & JQuery</p>
               <ProgressBar variant="info" now={99} label={`99%`} animated />
             </div>
-            <div className="c-about__right-box">
+            <div className={styles["c-about__right-box"]}>
               <p>Javascript</p>
               <ProgressBar variant="info" now={90} label={`90%`} animated />
             </div>
-            <div className="c-about__right-box">
+            <div className={styles["c-about__right-box"]}>
               <p>React & Redux & Next.js & TypeScript</p>
               <ProgressBar variant="info" now={98} label={`98%`} animated />
             </div>
-            <div className="c-about__right-box">
+            <div className={styles["c-about__right-box"]}>
               <p>Bootsrap / Antd / DevE / Npm</p>
               <ProgressBar variant="info" now={98} label={`98%`} animated />
             </div>
-            <div className="c-about__right-box">
+            <div className={styles["c-about__right-box"]}>
               <p>Vue & Angular</p>
               <ProgressBar variant="info" now={15} label={`15%`} animated />
             </div>
-            <div className="c-about__right-box">
+            <div className={styles["c-about__right-box"]}>
               <p>Python & Django & Deep Learning</p>
               <ProgressBar variant="info" now={20} label={`20%`} animated />
             </div>
