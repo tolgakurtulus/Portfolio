@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoadingContainer from "./Components/LoadingContainer/LoadingContainer.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
+import Footer from "./Components/Footer";
 import { projectData } from "./db/index.js";
 import "./App.scss";
 
@@ -25,7 +25,7 @@ function App() {
               />
             );
           })}
-          <Route path="*" element={<NotFound/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Suspense>

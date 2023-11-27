@@ -1,11 +1,11 @@
 import React from "react";
-import "./Footer.scss";
+import styles from "./styles.module.scss"; // Stil dosyasını dahil et
 
 const Footer = () => {
   return (
-    <div className="c-footer">
-      <div className="c-footer__container">
-        <div className="c-footer__item">
+    <div className={styles["c-footer"]}>
+      <div className={styles["c-footer__container"]}>
+        <div className={styles["c-footer__item"]}>
           <a
             href="https://github.com/tolgakurtulus"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Footer = () => {
             <img src="/Portfolio/img/email.png" alt="Mail" loading="lazy" />{" "}
           </a>
         </div>
-        <div className="c-footer__item">
+        <div className={styles["c-footer__item"]}>
           <h2>©2023 TOLGA KURTULUŞ. ALL RIGHTS RESERVED</h2>
         </div>
       </div>
