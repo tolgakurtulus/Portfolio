@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import MoveTitle from "../../Components/MoveTitle";
 import "./HomePage.scss";
 
 const HomePage = () => {
@@ -12,9 +13,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="c-homepage__welcome">
-          <h1 data-text="Welcome">
-            <mark>Welcome</mark>
-          </h1>
+          <MoveTitle />
         </div>
         <div className="c-homepage__typical">
           <Typical
