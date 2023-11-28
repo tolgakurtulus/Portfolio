@@ -42,11 +42,11 @@ export const projectData = [
     made: "Pixelplus",
   },
   {
-    title: "Ticari Araç",
-    titlelink: "Ticariarac",
-    img: "Ticariarac.png",
+    title: "Zorlu",
+    titlelink: "Zorlu",
+    img: "Zorlu.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
-    link: "https://ticariarac.vw.com.tr/ana-sayfa",
+    link: "https://www.zorlu.com.tr/",
     made: "Pixelplus",
   },
   {
@@ -146,11 +146,11 @@ export const projectData = [
     made: "Pixelplus",
   },
   {
-    title: "Zorlu",
-    titlelink: "Zorlu",
-    img: "Zorlu.png",
+    title: "Ticari Araç",
+    titlelink: "Ticariarac",
+    img: "Ticariarac.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
-    link: "https://www.zorlu.com.tr/",
+    link: "https://ticariarac.vw.com.tr/ana-sayfa",
     made: "Pixelplus",
   },
   {
@@ -517,9 +517,9 @@ export const projectData = [
   //   title: "Testtt",
   //   titlelink: "Testtt",
   //   img: "Testtt.png",
-  //   
+  //
   //   tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
-  //   
+  //
   //   link: "Testtt",
   //   made: "Pixelplus",
   // },
