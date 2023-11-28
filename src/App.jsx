@@ -7,7 +7,7 @@ import "./App.scss";
 
 const MainPage = lazy(() => import("./Pages/MainPage/MainPage.jsx"));
 const PortfolioDetail = lazy(() => import("./Pages/PortfolioDetail"));
-const NotFound = lazy(() => import("./Pages/NotFound/NotFound.jsx"));
+const NotFound = lazy(() => import("./Pages/NotFound"));
 
 function App() {
   return (
