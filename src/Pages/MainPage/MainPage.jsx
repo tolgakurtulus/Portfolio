@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Header from "../../Components/Header";
-import Homepage from "../HomePage/HomePage.jsx";
+import Homepage from "../HomePage";
 import About from "../About";
 import Skill from "../Skill";
 import Portfolio from "../Portfolio/Portfolio.jsx";

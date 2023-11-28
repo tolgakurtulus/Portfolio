@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import "./styles.scss";
 
 const MoveTitle = () => {
   return (
-    <h1 className={styles["c-movetitle"]} data-text="Welcome">
+    <h1 className="c-movetitle" data-text="Welcome">
       <mark>Welcome</mark>
     </h1>
   );
