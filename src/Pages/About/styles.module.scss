@@ -75,6 +75,12 @@
       color: white;
       opacity: 0.9;
     }
+
+    :global(.progress-bar) {
+      font-size: 15px;
+      font-weight: 900;
+      font-family: "Times New Roman", Times, serif;
+    }
   }
 
   &__button {

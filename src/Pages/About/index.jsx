@@ -51,27 +51,27 @@ const About = () => {
           <div className={styles["c-about__right"]}>
             <div className={styles["c-about__right-box"]}>
               <p>HTML & CSS & JQuery</p>
-              <ProgressBar variant="info" now={99} label={`99%`} animated />
+              <ProgressBar variant="danger" now={99} label={`99%`} animated />
             </div>
             <div className={styles["c-about__right-box"]}>
               <p>Javascript</p>
-              <ProgressBar variant="info" now={90} label={`90%`} animated />
+              <ProgressBar variant="danger" now={90} label={`90%`} animated />
             </div>
             <div className={styles["c-about__right-box"]}>
               <p>React & Redux & Next.js & TypeScript</p>
-              <ProgressBar variant="info" now={98} label={`98%`} animated />
+              <ProgressBar variant="danger" now={98} label={`98%`} animated />
             </div>
             <div className={styles["c-about__right-box"]}>
               <p>Bootsrap / Antd / DevE / Npm</p>
-              <ProgressBar variant="info" now={98} label={`98%`} animated />
+              <ProgressBar variant="danger" now={98} label={`98%`} animated />
             </div>
             <div className={styles["c-about__right-box"]}>
               <p>Vue & Angular</p>
-              <ProgressBar variant="info" now={15} label={`15%`} animated />
+              <ProgressBar variant="danger" now={15} label={`15%`} animated />
             </div>
             <div className={styles["c-about__right-box"]}>
               <p>Python & Django & Deep Learning</p>
-              <ProgressBar variant="info" now={20} label={`20%`} animated />
+              <ProgressBar variant="danger" now={20} label={`20%`} animated />
             </div>
           </div>
         </div>
