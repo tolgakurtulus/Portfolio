@@ -1,8 +1,7 @@
 import React, { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingContainer from "./Components/LoadingContainer";
 import Footer from "./Components/Footer";
-import "./App.scss";
 
 const MainPage = lazy(() => import("./Pages/MainPage/MainPage.jsx"));
 const PortfolioDetail = lazy(() => import("./Pages/PortfolioDetail"));
@@ -10,7 +9,7 @@ const NotFound = lazy(() => import("./Pages/NotFound"));
 
 function App() {
   return (
-    <div className="c-app">
+    <BrowserRouter>
       <Suspense fallback={<LoadingContainer />}>
         <Routes>
           <Route exact path="/Portfolio" element={<MainPage />} />
@@ -23,7 +22,7 @@ function App() {
         </Routes>
         <Footer />
       </Suspense>
-    </div>
+    </BrowserRouter>
   );
 }
 
