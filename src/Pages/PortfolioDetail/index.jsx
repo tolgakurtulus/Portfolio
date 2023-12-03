@@ -1,13 +1,23 @@
 import React from "react";
-import Button from "../../Components/Button";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { projectData } from "../../db/index.js";
+import Button from "../../Components/Button";
 import { Arrow } from "../../assets/svg/arrow";
 import styles from "./styles.module.scss";
 
-const PortfolioDetail = (item) => {
-  const { img, tag, title, link, made } = item.item;
+const PortfolioDetail = () => {
+  const { projectId } = useParams();
+  console.log("projectId:", projectId);
+  const projectDataResult = projectData.filter(
+    (item) => item.titlelink === projectId
+  );
+  console.log("projectDataResult:", projectDataResult);
+  const { img, tag, title, link, made } = projectDataResult[0];
+
   return (
     <div className={styles["c-portfolio-detail"]}>
+      <p>Tolga</p>
       <div className={styles["c-portfolio-detail__backgroud"]}>
         <img src={`/Portfolio/img/project/${img}`} loading="lazy" alt={title} />
       </div>
