@@ -212,7 +212,7 @@ export const projectData = [
   {
     title: "Bonus Piu",
     titlelink: "BonusPiu",
-    img: "BonusPiu.png",
+    img: "Bonuspiu.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.bonuspiu.com.tr/",
     made: "Pixelplus",
@@ -244,7 +244,7 @@ export const projectData = [
   {
     title: "Doqu Home",
     titlelink: "DoquHome",
-    img: "DoquHome.png",
+    img: "Doquhome.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.doquhome.com.tr/",
     made: "Pixelplus",
@@ -268,7 +268,7 @@ export const projectData = [
   {
     title: "Hes Kablo",
     titlelink: "HesKablo",
-    img: "HesKablo.png",
+    img: "Heskablo.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.hes.com.tr/",
     made: "Pixelplus",
@@ -300,7 +300,7 @@ export const projectData = [
   {
     title: "Mondi Home",
     titlelink: "MondiHome",
-    img: "MondiHome.png",
+    img: "Mondihome.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.mondihome.com.tr/",
     made: "Pixelplus",
@@ -492,7 +492,7 @@ export const projectData = [
   {
     title: "Hediyelik Karakalem",
     titlelink: "HediyelikKarakalem",
-    img: "HediyelikKarakalem.png",
+    img: "Hediyelikkarakalem.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.hediyelikkarakalem.com/",
     made: "HomeOffice",
@@ -508,7 +508,7 @@ export const projectData = [
   {
     title: "Canmarketings",
     titlelink: "Canmarketings",
-    img: "canmarketings.png",
+    img: "Canmarketings.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.canmarketings.com/",
     made: "HomeOffice",
