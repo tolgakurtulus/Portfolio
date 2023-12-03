@@ -8,10 +8,7 @@
 }
 
 .c-portfolio {
-  background-color: #0C090A;
-  h1 {
-    color: white;
-  }
+  background-color: #0c090a;
 
   &__container {
     padding: 25px 200px;
@@ -58,7 +55,7 @@
         rgba(0, 0, 0, 1) 25%,
         rgb(255, 255, 255) 50%,
         rgba(0, 0, 0, 1) 75%,
-        rgb(255, 255, 255) 100%,
+        rgb(255, 255, 255) 100%
       );
     }
 
@@ -77,13 +74,18 @@
     flex: 0 0 31%;
     max-width: 31%;
     margin: 2% 1%;
-    border: 2px solid white;
-    box-shadow: 0px 10px 30px black;
+    border: 1px solid white;
+    transition: all 1.1s;
 
     @media only screen and (max-width: 600px) {
       flex: 0 0 48%;
       max-width: 48%;
       margin: 2% 1%;
+    }
+
+    &:hover {
+      transition: all 1.1s;
+      border: 1px solid transparent;
     }
   }
 
@@ -96,44 +98,34 @@
     position: relative;
     overflow: hidden;
 
-    div,
-    img {
+    div {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 200px;
       width: 100%;
-      // width: 100%;
-      // height: 250px;
-      // vertical-align: middle;
-      // border-style: none;
-      // z-index: 2;
-      // opacity: 0.9;
     }
 
     &:hover {
       .c-portfolio__item-overlay {
-        opacity: 0.85;
+        opacity: 0.8;
       }
     }
   }
 
   &__item-overlay {
     background: #0c0c0c;
-    color: #eee;
     position: absolute;
-    top: 1px;
-    left: 1px;
-    right: 1px;
-    bottom: 1px;
-    color: #35424c;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     opacity: 0;
-    transition: all 0.5s;
-    z-index: 3;
+    transition: all 1.1s;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid white;
   }
 
   &__item-overlay-info {
@@ -144,9 +136,9 @@
 
     h6 {
       transform: translateY(10px);
-      transition: all 0.5s;
+      transition: all 1.1s;
       font-size: 30px;
-      font-weight: 900;
+      font-weight: 100;
       color: white;
       text-transform: capitalize;
     }
