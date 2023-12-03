@@ -252,7 +252,7 @@ export const projectData = [
   {
     title: "Emlak Bankası",
     titlelink: "EmlakBankasi",
-    img: "EmlakBankasi.png",
+    img: "Emlakbankasi.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://emlakkatilim.com.tr/",
     made: "Pixelplus",
@@ -260,7 +260,7 @@ export const projectData = [
   {
     title: "Gümüşsuyu Halı",
     titlelink: "GumussuyuHali",
-    img: "GumussuyuHali.png",
+    img: "Gumussuyuhali.png",
     tag: "Html, Css, Javascript, Jquery, Pug, Gulp, Webpack, Scss",
     link: "https://www.gumussuyu.com.tr/",
     made: "Pixelplus",
