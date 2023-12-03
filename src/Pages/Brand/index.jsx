@@ -9,9 +9,10 @@ const Brand = () => {
       <div className={styles["c-sb__container"]}>
         <Title title={"Brands"} />
         <div className={styles["c-sb__row"]}>
-          {brandData.map((item) => {
+          {brandData.map((item, i) => {
             return (
               <a
+                key={i}
                 rel="noreferrer"
                 target="_blank"
                 href={item.href}

@@ -9,9 +9,9 @@ const Skill = () => {
       <div className={styles["c-sb__container"]}>
         <Title title={"Skills"} />
         <div className={styles["c-sb__row"]}>
-          {skillData.map((item) => {
+          {skillData.map((item, i) => {
             return (
-              <div className={styles["c-sb__item"]}>
+              <div key={i} className={styles["c-sb__item"]}>
                 <img
                   src={`/Portfolio/img/skill/${item.img}`}
                   alt="html"

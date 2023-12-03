@@ -10,10 +10,10 @@ const Portfolio = () => {
       <div className="c-portfolio__container">
         <Title title={"Portfolio"} />
         <div className="c-portfolio__row">
-          {projectData.map((item) => {
+          {projectData.map((item, i) => {
             return (
               <Link
-                key={item.id}
+                key={i}
                 className="c-portfolio__item-container"
                 to={`/Portfolio/${item.titlelink}`}
               >
