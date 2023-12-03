@@ -19,11 +19,11 @@ const Portfolio = () => {
               >
                 <div key={item.id} className="c-portfolio__item">
                   <div className="c-portfolio__item-img">
-                    <div
-                      style={{
-                        backgroundImage: `url(/Portfolio/img/project/${item.img})`,
-                      }}
-                      alt={item.title}
+                    <img
+                      src={`/Portfolio/img/project/${item.img}`}
+                      alt="html"
+                      title={item.title}
+                      loading="lazy"
                     />
                     <div className="c-portfolio__item-overlay">
                       <div className="c-portfolio__item-overlay-info">
