@@ -1,14 +1,10 @@
+@import "../../assets/scss/core.scss";
+
 .c-sb {
   background: linear-gradient(to right, #2c3e50, #bdc3c7);
 
   &__container {
     padding: 25px 200px;
-    @media only screen and (max-width: 1200px) {
-      padding: 50px !important;
-    }
-    @media only screen and (max-width: 768px) {
-      padding: 20px 5% !important;
-    }
   }
 
   &__row {
@@ -29,9 +25,8 @@
         rgba(0, 0, 0, 1) 25%,
         rgb(255, 255, 255) 50%,
         rgba(0, 0, 0, 1) 75%,
-        rgb(255, 255, 255) 100%,
+        rgb(255, 255, 255) 100%
       );
-
     }
 
     &::-webkit-scrollbar {
@@ -47,5 +42,25 @@
 
   &__item {
     cursor: pointer;
+  }
+  @media only screen and (max-width: 1200px) {
+    &__container {
+      padding: 50px !important;
+    }
+  }
+
+  @media only screen and (max-width: $md) {
+    &__container {
+      padding: 20px 5% !important;
+    }
+
+    &__row {
+      padding: 30px;
+      gap: 50px;
+    }
+
+    &__item {
+      width: calc(50% - 25px);
+    }
   }
 }

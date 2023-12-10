@@ -9,7 +9,6 @@ import Portfolio from "../Portfolio/Portfolio.jsx";
 import Brand from "../Brand";
 
 const MainPage = () => {
-  const getQueryStringHash = window.location.hash;
   const navigate = useNavigate();
   const homeScroll = useRef();
   const aboutScroll = useRef();
@@ -18,7 +17,7 @@ const MainPage = () => {
   const brandScroll = useRef();
 
   useEffect(() => {
-    if (getQueryStringHash.indexOf("portfolioback") !== -1) {
+    if (window.location.hash.indexOf("portfolioback") !== -1) {
       portfolioScroll.current.scrollIntoView({
         block: "center",
         inline: "center",
@@ -28,7 +27,7 @@ const MainPage = () => {
   }, []);
 
   const handleMenuClick = (item) => {
-    if (getQueryStringHash.indexOf("portfolioback") !== -1) {
+    if (window.location.hash.indexOf("portfolioback") !== -1) {
       navigate("/");
     }
 
