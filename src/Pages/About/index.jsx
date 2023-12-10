@@ -40,7 +40,7 @@ const About = () => {
             </p>
             <div className={styles["c-about__button"]}>
               <a
-                href="/Portfolio/img/Tolga-Kurtulus-CV.pdf"
+                href="/Portfolio/Tolga-Kurtulus-CV.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
