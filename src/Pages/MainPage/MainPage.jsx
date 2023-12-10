@@ -17,11 +17,13 @@ const MainPage = () => {
 
   useEffect(() => {
     if (window.location.hash.indexOf("portfolioback") !== -1) {
-      portfolioScroll.current.scrollIntoView({
-        block: "start",
-        inline: "center",
-        behavior: "smooth",
-      });
+      setTimeout(() => {
+        portfolioScroll.current.scrollIntoView({
+          block: "start",
+          inline: "center",
+          behavior: "smooth",
+        });
+      }, 100);
     }
   }, []);
 
