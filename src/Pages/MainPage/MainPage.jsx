@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 import Header from "../../Components/Header";
 import Home from "../Home";
 import About from "../About";
@@ -19,7 +18,7 @@ const MainPage = () => {
   useEffect(() => {
     if (window.location.hash.indexOf("portfolioback") !== -1) {
       portfolioScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
@@ -33,31 +32,31 @@ const MainPage = () => {
 
     if (item === "home") {
       homeScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
     } else if (item === "about") {
       aboutScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
     } else if (item === "skill") {
       skillScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
     } else if (item === "portfolio") {
       portfolioScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
     } else if (item === "brand") {
       brandScroll.current.scrollIntoView({
-        block: "center",
+        block: "start",
         inline: "center",
         behavior: "smooth",
       });
