@@ -1,3 +1,4 @@
+// Responsive
 $xs: 375px;
 $sm: 576px;
 $md: 768px;
@@ -6,3 +7,10 @@ $pro: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 $xxxl: 1600px;
+
+// Color
+$white: #fff;
+$black: #000;
+
+// Other
+$cubic: cubic-bezier(0.645, 0.045, 0.355, 1);

@@ -1,6 +1,4 @@
-$cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-$white: #fff;
-$black: #000;
+@import "../../assets/scss/core.scss";
 
 .c-button {
   font-size: 18px;
@@ -63,5 +61,9 @@ $black: #000;
     &:hover {
       color: $black;
     }
+  }
+
+  @media only screen and (max-width: $md) {
+    min-width: 200px;
   }
 }
