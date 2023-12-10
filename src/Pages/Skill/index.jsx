@@ -11,15 +11,14 @@ const Skill = () => {
         <div className={styles["c-sb__row"]}>
           {skillData.map((item, i) => {
             return (
-              <div key={i} className={styles["c-sb__item"]}>
-                <img
-                  src={`/Portfolio/img/skill/${item.img}`}
-                  alt="html"
-                  title={item.title}
-                  loading="lazy"
-                  width="100"
-                />
-              </div>
+              <img
+                key={i}
+                src={`/Portfolio/img/skill/${item.img}`}
+                alt="html"
+                title={item.title}
+                loading="lazy"
+                width="100"
+              />
             );
           })}
         </div>

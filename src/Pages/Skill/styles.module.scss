@@ -1,22 +1,30 @@
-.c-sb {
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+@import "../../assets/scss/core.scss";
 
-    &__container {
-      padding: 25px 200px;
-      @media only screen and (max-width: 1200px) {
-        padding: 50px !important;
-      }
-      @media only screen and (max-width: 768px) {
-        padding: 20px 5% !important;
-      }
+.c-sb {
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+  &__container {
+    padding: 25px 200px;
+    @media only screen and (max-width: 1200px) {
+      padding: 50px !important;
     }
-  
-    &__row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 71px;
+    @media only screen and (max-width: 768px) {
+      padding: 20px 5% !important;
     }
   }
-  
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 71px;
+
+    @media only screen and (max-width: $md) {
+      gap: 45px;
+      img {
+        width: 75px;
+      }
+    }
+  }
+}
