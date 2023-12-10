@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Header from "../../Components/Header";
-import Homepage from "../HomePage";
+import Home from "../Home";
 import About from "../About";
 import Skill from "../Skill";
 import Portfolio from "../Portfolio/Portfolio.jsx";
@@ -69,7 +69,7 @@ const MainPage = () => {
     <>
       <Header handleMenuClick={handleMenuClick} />
       <div ref={homeScroll}>
-        <Homepage />
+        <Home />
       </div>
       <div ref={aboutScroll}>
         <About />

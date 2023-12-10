@@ -3,19 +3,19 @@ import Typical from "react-typical";
 import MoveTitle from "../../Components/MoveTitle";
 import styles from "./styles.module.scss";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className={styles["c-homepage"]}>
-      <div className={styles["c-homepage__row"]}>
-        <div className={styles["c-homepage__col"]}>
-          <div className={styles["c-homepage__circle"]}>
-            <div className={styles["c-homepage__circle-item"]}></div>
+    <div className={styles["c-home"]}>
+      <div className={styles["c-home__row"]}>
+        <div className={styles["c-home__col"]}>
+          <div className={styles["c-home__circle"]}>
+            <div className={styles["c-home__circle-item"]}></div>
           </div>
         </div>
-        <div className={styles["c-homepage__welcome"]}>
+        <div className={styles["c-home__welcome"]}>
           <MoveTitle />
         </div>
-        <div className={styles["c-homepage__typical"]}>
+        <div className={styles["c-home__typical"]}>
           <Typical
             steps={[
               `I'm`,
@@ -36,4 +36,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

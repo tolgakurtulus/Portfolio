@@ -1,13 +1,29 @@
+@import "../../assets/scss/core.scss";
+
 @keyframes circleMove {
   0% {
-    left: 0px;
+    left: 0;
   }
   100% {
     left: 75px;
   }
 }
 
-.c-homepage {
+@mixin welcometypical($val, $valm) {
+  top: $val;
+  position: absolute;
+  left: 200px;
+
+  @media only screen and (max-width: 1200px) {
+    left: 50px;
+  }
+  @media only screen and (max-width: 768px) {
+    top: $valm;
+    left: 5%;
+  }
+}
+
+.c-home {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -19,12 +35,13 @@
     content: "";
     background-image: url("/assets/bg.jpg");
     background-size: cover;
+    background-position: center;
     position: absolute;
     background-color: black;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1;
   }
 
@@ -39,7 +56,7 @@
       font-size: 35px;
       margin-bottom: 20px;
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: $md) {
         font-size: 27px;
       }
     }
@@ -47,8 +64,8 @@
 
   &__circle {
     position: absolute;
-    top: 26%;
-    left: 53%;
+    top: 18%;
+    left: 55%;
   }
 
   &__circle-item {
@@ -64,33 +81,15 @@
       inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00,
       10px 0 80px #f55;
 
-    animation: circleMove 3s infinite;
-    animation-direction: alternate;
+    animation: circleMove 3s infinite alternate;
+  }
+
+  &__typical {
+    @include welcometypical(65%, 70%);
   }
 
   &__welcome {
-    position: absolute;
-    top: 55%;
-    left: 200px;
-
-    @media only screen and (max-width: 1200px) {
-      left: 50px;
-    }
-    @media only screen and (max-width: 768px) {
-      left: 5%;
-    }
-  }
-  &__typical {
-    position: absolute;
-    top: 65%;
-    left: 200px;
-
-    @media only screen and (max-width: 1200px) {
-      left: 50px;
-    }
-    @media only screen and (max-width: 768px) {
-      left: 5%;
-    }
+    @include welcometypical(55%, 60%);
   }
 
   :global(.styles_typicalWrapper__1_Uvh) {
@@ -98,7 +97,7 @@
     color: white;
     font-weight: bold;
     font-family: "Dancing Script", cursive;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $md) {
       font-size: 30px;
     }
   }
