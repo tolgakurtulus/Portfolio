@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Header from "../../Components/Header";
 import Homepage from "../HomePage";
 import About from "../About";
@@ -7,6 +9,8 @@ import Portfolio from "../Portfolio/Portfolio.jsx";
 import Brand from "../Brand";
 
 const MainPage = () => {
+  const getQueryStringHash = window.location.hash;
+  const navigate = useNavigate();
   const homeScroll = useRef();
   const aboutScroll = useRef();
   const skillScroll = useRef();
@@ -14,9 +18,7 @@ const MainPage = () => {
   const brandScroll = useRef();
 
   useEffect(() => {
-    let getQueryString = window.location.search;
-    let getQueryStringHash = window.location.hash;
-    if (getQueryString === "?portfolioback" && getQueryStringHash === "") {
+    if (getQueryStringHash.indexOf("portfolioback") !== -1) {
       portfolioScroll.current.scrollIntoView({
         block: "center",
         inline: "center",
@@ -26,6 +28,10 @@ const MainPage = () => {
   }, []);
 
   const handleMenuClick = (item) => {
+    if (getQueryStringHash.indexOf("portfolioback") !== -1) {
+      navigate("/");
+    }
+
     if (item === "home") {
       homeScroll.current.scrollIntoView({
         block: "center",

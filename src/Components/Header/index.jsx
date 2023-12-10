@@ -26,7 +26,7 @@ const Header = (props) => {
       variant="dark"
       className={styles["c-nav"]}
     >
-      <Navbar.Brand className={styles["c-nav__logo"]} href="#home">
+      <Navbar.Brand className={styles["c-nav__logo"]} href="/">
         <img
           src="/Portfolio/img/portfoliologosq.webp"
           alt="Mail"
@@ -40,31 +40,19 @@ const Header = (props) => {
       >
         <Nav className="mr-auto"></Nav>
         <Nav>
-          <Nav.Link onClick={() => props.handleMenuClick("home")} href="#home">
+          <Nav.Link onClick={() => props.handleMenuClick("home")}>
             Home
           </Nav.Link>
-          <Nav.Link
-            onClick={() => props.handleMenuClick("about")}
-            href="#about"
-          >
+          <Nav.Link onClick={() => props.handleMenuClick("about")}>
             About
           </Nav.Link>
-          <Nav.Link
-            onClick={() => props.handleMenuClick("skill")}
-            href="#skill"
-          >
+          <Nav.Link onClick={() => props.handleMenuClick("skill")}>
             Skills
           </Nav.Link>
-          <Nav.Link
-            onClick={() => props.handleMenuClick("portfolio")}
-            href="#portfolio"
-          >
+          <Nav.Link onClick={() => props.handleMenuClick("portfolio")}>
             Portfolio
           </Nav.Link>
-          <Nav.Link
-            onClick={() => props.handleMenuClick("brand")}
-            href="#brand"
-          >
+          <Nav.Link onClick={() => props.handleMenuClick("brand")}>
             Brands
           </Nav.Link>
         </Nav>

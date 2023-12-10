@@ -15,7 +15,9 @@ const Portfolio = () => {
               <Link
                 key={i}
                 className="c-portfolio__item-container"
-                to={`/Portfolio/${item.titlelink}`}
+                to={`/${item.titlelink}`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div key={item.id} className="c-portfolio__item">
                   <div className="c-portfolio__item-img">

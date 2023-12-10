@@ -8,11 +8,9 @@ import styles from "./styles.module.scss";
 
 const PortfolioDetail = () => {
   const { projectId } = useParams();
-  console.log("projectId:", projectId);
   const projectDataResult = projectData.filter(
     (item) => item.titlelink === projectId
   );
-  console.log("projectDataResult:", projectDataResult);
   const { img, tag, title, link, made } = projectDataResult[0];
 
   return (
@@ -22,7 +20,7 @@ const PortfolioDetail = () => {
         <img src={`/Portfolio/img/project/${img}`} loading="lazy" alt={title} />
       </div>
       <Link
-        to={`/Portfolio?portfolioback`}
+        to={`/?portfolioback`}
         className={styles["c-portfolio-detail__logo"]}
       >
         <img
@@ -32,7 +30,7 @@ const PortfolioDetail = () => {
         />
       </Link>
       <Link
-        to={`/Portfolio?portfolioback`}
+        to={`/?portfolioback`}
         className={styles["c-portfolio-detail__back"]}
       >
         <Arrow />
