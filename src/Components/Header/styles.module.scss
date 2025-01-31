@@ -3,7 +3,9 @@
 .c-nav {
   padding: 10px 200px !important;
   z-index: 2000;
-  transition: background-color 0.85s, transform 0.85s;
+  transition:
+    background-color 0.85s,
+    transform 0.85s;
 
   &__button a {
     font-size: 23px !important;
@@ -12,7 +14,7 @@
   }
 
   &__logo img {
-    width: 125px;
+    width: 100px;
   }
 
   @media only screen and (max-width: $xl) {

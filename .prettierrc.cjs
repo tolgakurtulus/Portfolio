@@ -1,0 +1,16 @@
+module.exports = {
+  semi: true, // Noktalı virgüllerin kullanılıp kullanılmayacağını belirler. (true/false)
+  singleQuote: false, // Tek tırnak (`'`) veya çift tırnak (`"`) kullanımını belirler. (true/false)
+  tabWidth: 2, // Bir tab karakterinin kaç boşluk genişliğinde olacağını belirler. (tam sayı)
+  printWidth: 200, // Bir satırın maksimum karakter genişliğini belirler. (tam sayı)
+  useTabs: false, // Girintileme için tab karakteri mi yoksa boşluk mu kullanılacağını belirler. (true/false)
+  trailingComma: 'es5', // Son elemandan sonra virgül kullanılıp kullanılmayacağını belirler. ("none", "es5" veya "all")
+  arrowParens: 'always', // Tek bir parametre alan ok işlevlerinde parametre parantezlerinin kullanılıp kullanılmayacağını belirler. ("avoid" veya "always")
+  jsxSingleQuote: true, // JSX içinde tek tırnak (`'`) veya çift tırnak (`"`) kullanımını belirler. (true/false)
+  jsxBracketSameLine: true, // JSX açılış parantezini aynı satırda mı yoksa yeni bir satırda mı oluşturacağını belirler. (true/false)
+  bracketSpacing: true, // Nesne literallerindeki boşlukları kullanılıp kullanılmayacağını belirler. (true/false)
+  trailingComma: 'es5', // Diziler ve nesne literallerinin son öğesinden sonra bir virgül eklenip eklenmeyeceğini belirler. ("none", "es5", veya "all")
+  endOfLine: 'lf', // Dosya sonu karakterini belirler. ("auto", "lf", "crlf", veya "cr")
+  quoteProps: 'as-needed', // Nesne özellikleri için tırnak kullanımını belirler. ("as-needed", "consistent", veya "preserve")
+  proseWrap: 'preserve', // Markdown dosyaları için metin sarma biçimini belirler. ("always", "never", veya "preserve")
+};
